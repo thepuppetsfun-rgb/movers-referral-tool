@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #1c1917;
+  --ink-2: #44403c;
+  --ink-3: #78716c;
+  --surface: #faf9f7;
+  --surface-2: #f5f3ef;
+  --border: #e7e2db;
+  --accent: #b84318;
+  --accent-hover: #9a3714;
+  --accent-bg: #fef7f4;
+  --green: #3d7c4a;
+  --green-bg: #f4faf5;
+  --amber: #9a6b15;
+  --amber-bg: #fffcf5;
+}
+
+body {
+  font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: var(--surface);
+  color: var(--ink);
+}
+
+.font-display {
+  font-family: 'DM Serif Display', Georgia, serif;
+}
+
+input[type="checkbox"] { accent-color: var(--accent); }
+
+::selection { background: #e2d6cd; }
+
+.custom-scroll::-webkit-scrollbar { width: 5px; }
+.custom-scroll::-webkit-scrollbar-track { background: transparent; }
+.custom-scroll::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+@media (max-width: 640px) {
+  .hide-mobile { display: none; }
+}
